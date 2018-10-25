@@ -32,7 +32,6 @@ def multiline(xs, ys, c, ax=None, **kwargs):
         xs = np.array([xs for i in range(len(ys))])
     else:
         pass
-    print(np.shape(xs))
 
     # create LineCollection
     segments = [np.column_stack([x, y]) for x, y in zip(xs, ys)]
